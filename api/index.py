@@ -9,4 +9,5 @@ if str(PROJECT_ROOT) not in sys.path:
 
 from src.server import app
 
-# Vercel Serverless Function entrypoint
+__all__ = ["app"]
+

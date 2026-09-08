@@ -8,8 +8,3 @@ if str(ROOT_DIR) not in sys.path:
 from src.server import app
 
 __all__ = ["app"]
-
-if __name__ == "__main__":
-    import uvicorn
-    from src.config import HOST, PORT
-    uvicorn.run("src.server:app", host=HOST, port=PORT, reload=True)
